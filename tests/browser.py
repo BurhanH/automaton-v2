@@ -2,7 +2,7 @@ import unittest
 from selenium import webdriver
 
 
-class BrowserResolution(unittest.TestCase):
+class TestBrowserResolution(unittest.TestCase):
     """
     This test suite for browser resolution testing.
     """
@@ -10,7 +10,7 @@ class BrowserResolution(unittest.TestCase):
         """
         Initiate driver for each test
         """
-        self.webdriver = webdriver.Firefox()
+        self.driver = webdriver.Firefox()
 
     def _set_and_verify(self, set_width, set_height):
         """
@@ -18,8 +18,8 @@ class BrowserResolution(unittest.TestCase):
         :param set_width:
         :param set_height:
         """
-        self.webdriver.set_window_size(set_width, set_height)
-        resolution = self.webdriver.get_window_size()
+        self.driver.set_window_size(set_width, set_height)
+        resolution = self.driver.get_window_size()
         width = resolution.get('width')
         height = resolution.get('height')
 
@@ -69,7 +69,7 @@ class BrowserResolution(unittest.TestCase):
         """
         Closing driver after each test
         """
-        self.webdriver.close()
+        self.driver.close()
 
 
 if __name__ == '__main__':

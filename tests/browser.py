@@ -5,7 +5,7 @@ WAIT_IMPL = 10
 WINDOW_SIZE = 1280, 1024
 
 
-class TestBrowserResolution(unittest.TestCase):
+class TestBrowser(unittest.TestCase):
     """
     This test suite for browser resolution testing.
     """

@@ -1,6 +1,9 @@
 import unittest
 from selenium import webdriver
 
+WAIT_IMPL = 10
+WINDOW_SIZE = 1280, 1024
+
 
 class TestBrowserResolution(unittest.TestCase):
     """
@@ -11,6 +14,8 @@ class TestBrowserResolution(unittest.TestCase):
         Initiate driver for each test
         """
         self.driver = webdriver.Firefox()
+        self.driver.implicitly_wait(WAIT_IMPL)
+        self.driver.set_window_size(WINDOW_SIZE[0], WINDOW_SIZE[1])
 
     def _set_and_verify(self, set_width, set_height):
         """
@@ -64,6 +69,25 @@ class TestBrowserResolution(unittest.TestCase):
         Testing resolution 1900, 1200
         """
         self._set_and_verify(1900, 1200)
+
+    def test_search_in_google(self):
+        """
+        Testing search in Google
+        """
+        # Going to google.com
+        self.driver.get('https://www.google.com')
+        # Searching for the input field by name and entering data
+        self.driver.find_element_by_name('q').send_keys('python')
+        # Clicking Google Search button
+        # FIXME workaround, implicitly_wait doesn't work as expected, probably the reason is search drop-down menu
+        import time
+        time.sleep(2)
+        self.driver.find_element_by_css_selector("input[name='btnK']").click()
+        # Verifying search results
+        self.assertTrue(
+            self.driver.find_element_by_class_name('bNg8Rb').is_displayed(),
+            "Unable to find results on a page!"
+        )
 
     def tearDown(self):
         """

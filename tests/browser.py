@@ -88,7 +88,7 @@ class TestBrowser(unittest.TestCase):
         self.driver.find_element_by_css_selector("input[name='btnK']").click()
         # Verifying search results
         self.assertTrue(
-            self.driver.find_element_by_class_name('bNg8Rb').is_displayed(),
+            self.driver.find_element_by_css_selector('.bNg8Rb').is_displayed(),
             "Unable to find results on a page!"
         )
 

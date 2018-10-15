@@ -40,6 +40,6 @@ Chrome 69.*, chromedriver 2.42 <br>
 5) Execute `python -m unittest discover tests "*.py" -v`
 
 ## How to run test/s in Chrome browser
-1) Go to any UI scenario and change the value of the BROWSER variable from `firefox` to `chrome`. Note! Before execution read step 6 from 'How to prepare environment' section
+1) Go to any UI scenario and change the value of the `BROWSER` variable from `firefox` to `chrome`. Note! Before execution read step 6 from 'How to prepare environment' section
 
 To be continue ...

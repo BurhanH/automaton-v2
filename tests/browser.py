@@ -21,11 +21,18 @@ class TestBrowser(unittest.TestCase):
         self.driver.implicitly_wait(WAIT_IMPL)
         self.driver.set_window_size(WINDOW_SIZE[0], WINDOW_SIZE[1])
 
-    def _set_and_verify(self, set_width, set_height):
-        """
-        Common method to set browser resolution and verify it.
-        :param set_width:
-        :param set_height:
+    def _set_and_verify(self, set_width, set_height) -> None:
+        """ Common method to set browser resolution and verify it.
+
+        Args:
+            set_width (int): width of a browser window
+            set_height (int): height of a browser window
+
+        Returns:
+            None
+
+        Rises:
+            AssertionError
         """
         self.driver.set_window_size(set_width, set_height)
         resolution = self.driver.get_window_size()

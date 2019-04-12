@@ -88,11 +88,17 @@ class TestBrowser(unittest.TestCase):
         # Going to google.com
         self.driver.get('https://www.google.com')
         # Searching for the input field by name and entering data
-        self.driver.find_element_by_name('q').send_keys('python')
+        search = self.driver.find_element_by_name('q')
+        search.is_displayed()
+        search.send_keys('python')
         # Searching and waiting the search drop-down menu
-        self.driver.find_element_by_css_selector('.FPdoLc.VlcLAe').is_displayed()
+        menu = self.driver.find_element_by_css_selector('.FPdoLc.VlcLAe')
+        menu.is_displayed()
         # Clicking Google Search button
-        self.driver.find_element_by_css_selector("input[name='btnK']").click()
+        search_btn = self.driver.find_element_by_css_selector("input[name='btnK']")
+        search_btn.is_displayed()
+        search_btn.is_enabled()
+        search_btn.click()
         # Verifying search results
         self.assertTrue(
             self.driver.find_element_by_css_selector('.bNg8Rb').is_displayed(),

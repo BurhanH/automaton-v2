@@ -8,8 +8,8 @@ Automation framework (UI) - an example. Based on Python, Selenium, and Unittest
 ## Requirements
 Python 3.6.\*\/3.7.\*, Selenium 3.141.0, Unittest, <br>
 virtualenv (virtual environment manager), <br> 
-Firefox 65.\*, geckodriver 0.24, <br>
-Chrome 71.*, chromedriver 2.45 <br>
+Firefox 66.\*, geckodriver 0.24, <br>
+Chrome 75.*, chromedriver 75.0.3770.8 <br>
 
 ## Project structure
 ```text

@@ -1,5 +1,6 @@
 import unittest
 from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
 
 WAIT_IMPL = 10
 WINDOW_SIZE = 1280, 1024
@@ -90,16 +91,7 @@ class TestBrowser(unittest.TestCase):
         # Searching for the input field by name and entering data
         search = self.driver.find_element_by_name('q')
         search.is_displayed()
-        search.send_keys('python')
-        # Searching and waiting the search drop-down menu
-        menu = self.driver.find_element_by_css_selector('.FPdoLc.VlcLAe')
-        menu.is_displayed()
-        # Clicking Google Search button
-        search_btn = self.driver.find_element_by_css_selector("input[name='btnK']")
-        search_btn.is_displayed()
-        search_btn.is_enabled()
-        search_btn.click()
-        # Verifying search results
+        search.send_keys('python' + Keys.ENTER)
         self.assertTrue(
             self.driver.find_element_by_css_selector('.bNg8Rb').is_displayed(),
             "Unable to find results on a page!"

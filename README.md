@@ -1,5 +1,5 @@
-# automaton-v2
-Automation framework (UI) - an example. Based on Python, Selenium, and Unittest
+# Automaton-v2
+Automation testing framework (UI) - an example. Based on Python, Selenium, and Unittest
 
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/BurhanH/automaton-v2/blob/master/LICENSE)
 [![Build Status](https://travis-ci.org/BurhanH/automaton-v2.svg?branch=master)](https://travis-ci.org/BurhanH/automaton-v2)

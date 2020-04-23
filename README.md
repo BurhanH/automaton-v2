@@ -41,15 +41,15 @@ Chrome 81.0.4044.122, chromedriver 81.0.4044.69 <br>
 5) Execute `python -m unittest discover tests "*.py" -v`
 
 ## How to run test/s in Chrome browser
-Go to any UI scenario and change the value of the `BROWSER` variable from `firefox` to `chrome`. </br> Note! Before execution read steps 5-6 from [How to prepare environment](https://github.com/BurhanH/automaton-v2#how-to-prepare-environment) section
+Go to any UI scenario and change the value of the `BROWSER` variable from `firefox` to `chrome`. <br> Note! Before execution read steps 5-6 from [How to prepare environment](https://github.com/BurhanH/automaton-v2#how-to-prepare-environment) section
 
 ## Techology stack and helpful info
-[Python 3.6](https://docs.python.org/3.6/) / [Python 3.7](https://docs.python.org/3.7/)</br>
-[virtualenv](https://packaging.python.org/guides/installing-using-pip-and-virtualenv/) </br>
-[GitHub, cloning repository](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) </br>
-[unittest](https://docs.python.org/3.7/library/unittest.html) </br>
-[Selenium](https://www.selenium.dev/documentation/en/) </br>
-[Firefox](https://www.mozilla.org/en-US/firefox/) </br>
-[geckodriver](https://github.com/mozilla/geckodriver/releases) </br>
-[Chrome](https://www.google.com/chrome/) </br>
-[ChromeDriver](https://chromedriver.chromium.org/downloads) </br>
+[Python 3.6](https://docs.python.org/3.6/) / [Python 3.7](https://docs.python.org/3.7/)<br>
+[virtualenv](https://packaging.python.org/guides/installing-using-pip-and-virtualenv/) <br>
+[GitHub, cloning repository](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) <br>
+[unittest](https://docs.python.org/3.7/library/unittest.html) <br>
+[Selenium](https://www.selenium.dev/documentation/en/) <br>
+[Firefox](https://www.mozilla.org/en-US/firefox/) <br>
+[geckodriver](https://github.com/mozilla/geckodriver/releases) <br>
+[Chrome](https://www.google.com/chrome/) <br>
+[ChromeDriver](https://chromedriver.chromium.org/downloads) <br>

@@ -2,14 +2,13 @@
 Automation testing framework (UI) - an example. Based on Python, Selenium, and Unittest
 
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/BurhanH/automaton-v2/blob/master/LICENSE)
-[![Build Status](https://travis-ci.org/BurhanH/automaton-v2.svg?branch=master)](https://travis-ci.org/BurhanH/automaton-v2)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/d13a059853a54c64a33cd307b937996e)](https://app.codacy.com/app/BurhanH/automaton-v2?utm_source=github.com&utm_medium=referral&utm_content=BurhanH/automaton-v2&utm_campaign=Badge_Grade_Dashboard)
 
 
 ## Requirements
 Python 3.6.\*\/3.7.\*, Selenium 3.141.0, Unittest, <br>
 virtualenv (virtual environment manager), <br> 
-Firefox 75.0, geckodriver 0.26.0, <br>
+Firefox 90.0, geckodriver 0.29.1, <br>
 Chrome 81.0.4044.122, chromedriver 81.0.4044.69 <br>
 
 ## Project structure

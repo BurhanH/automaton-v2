@@ -93,7 +93,7 @@ class TestBrowser(unittest.TestCase):
         search.is_displayed()
         search.send_keys('python' + Keys.ENTER)
         self.assertTrue(
-            self.driver.find_element_by_css_selector('.bNg8Rb').is_displayed(),
+            self.driver.find_element_by_id('search').is_displayed(),
             "Unable to find results on a page!"
         )
 

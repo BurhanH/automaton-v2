@@ -43,4 +43,4 @@ jobs:
         MOZ_HEADLESS: 1
       run: |
         # python -m unittest discover tests "*.py" -v
-        python -m xmlrunner discover -t ./tests -o ./test-reports/junit
+        python -m xmlrunner discover -t ~/tests -o ~/test-reports/junit

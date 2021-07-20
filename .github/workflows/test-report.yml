@@ -12,6 +12,6 @@ jobs:
     - uses: dorny/test-reporter@v1
       with:
         artifact: unittest-results
-        name: unittest Test report
+        name: unittest Test Report
         path: '*.xml'
         reporter: java-junit

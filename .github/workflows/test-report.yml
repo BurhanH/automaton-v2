@@ -1,0 +1,17 @@
+name: Test Report
+on:
+  workflow_run:
+    workflows:
+      - Python Selenium unittest testing
+    types:
+      - completed
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: dorny/test-reporter@v1
+      with:
+        artifact: unittest-results
+        name: unittest Tests
+        path: '*.xml'
+        reporter: java-junit
